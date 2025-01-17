@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #f8b95a;
+    --primary-contrast-color: #fff;
+    --secondary-color: #333;
+    --secondary-constast-color: #ffffff;
+
+    --main-color : var(--secondary-color);
+    --background-color: var(--secondary-constast-color);
+}
+
+
+/* Reset some default browser styles */
+body,p{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: var(--primary-color)    
+}
+
+
+
+/* Set a background color and font for the body */
+body {
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    color: var(--main-color);
+}
+
+/* Style the header */
+header {
+    background-color: var(--primary-color);
+    color: var(--primary-contrast-color);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1, header h3, header a {
+    color: var(--primary-contrast-color);
+    margin: 0;
+    text-decoration: none;
+}
+
+.header-divider {
+    width: 0;
+    height: 80px;
+    border-left: var(--primary-contrast-color) 1px solid;
+}
+
+/* Style the main content area */
+main {
+    padding: 2em;
+}
+
+/* Style the footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--secondary-constast-color);
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Style links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style lists */
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 0.5em 0;
+}
