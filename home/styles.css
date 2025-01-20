@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #f8b95a;
+    --primary-color: #f1b861;
     --primary-contrast-color: #fff;
+    --primary-highlight-color: #ffd79a;
     --secondary-color: #333;
-    --secondary-constast-color: #ffffff;
+    --secondary-constast-color: #fff;
 
     --main-color : var(--secondary-color);
     --background-color: var(--secondary-constast-color);
@@ -15,7 +16,8 @@ body,p{
     padding: 0;
 }
 h1,h2,h3,h4,h5,h6 {
-    color: var(--primary-color)    
+    color: var(--primary-color);
+    margin: 0;
 }
 
 
@@ -51,6 +53,57 @@ header h1, header h3, header a {
 /* Style the main content area */
 main {
     padding: 2em;
+}
+
+button, .button {
+    background-color: var(--primary-color);
+    color: var(--primary-contrast-color);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+button:hover, .button:hover {
+    background-color: var(--primary-highlight-color);
+    text-decoration: none;
+}
+.navigate::after {
+    content: ' >';
+}
+
+#repository-list {
+    border-left: #333 1px solid;
+    margin-left: 0.5em;
+    padding-left: 1em;
+}
+
+.repository {
+    width: fit-content;
+    min-width: 35em;
+    max-width: 90%;
+    background-color: var(--secondary-color);
+    color: var(--secondary-constast-color);
+    border-radius: 5px;
+    gap:5px;
+    padding: 1em;
+    margin: 1em 0;
+}
+.repository p {
+    margin: 0.5em 0;
+    max-height: 2.4lh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.repository-avatar {
+    position: relative;
+    float: right;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
 }
 
 /* Style the footer */

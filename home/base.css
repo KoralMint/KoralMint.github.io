@@ -9,3 +9,7 @@
     text-align: center;
     justify-content: center;
 }
+
+.error {
+    color: rgb(255, 85, 85);
+}

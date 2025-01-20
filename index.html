@@ -6,6 +6,8 @@
     <title>KoralMint GitHub.io</title>
     <link rel="stylesheet" href="home/styles.css">
     <link rel="stylesheet" href="home/base.css">
+
+    <script src="./home/scripts/repositoryFetch.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,7 +25,7 @@
         </nav>
 
         <div id="headericon" class="center">
-            <a href="https://github.com/KoralMint">
+            <a href="https://github.com/KoralMint" target="_blank">
                 <img src="https://avatars.githubusercontent.com/u/140129280?v=4"
                 alt="KoralMint icon" height="70px" style="border-radius: 5px;">
             </a>
@@ -36,6 +38,12 @@
         <section id="projects">
             <h2>Projects</h2>
             <p>Details about my projects will be listed here.</p>
+            <div id="repositories">
+                <ul id="repository-list">
+                    <button id="fetch-repositories" onclick="fetchRepositories()">Fetch Repositories</button>
+                    <button class="fetchbutton" onclick="generateDummy()">dummy</button>
+                </ul>
+            </div>
         </section>
         <section id="aboutme">
             <h2>About Me</h2>
